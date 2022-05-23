@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="google-site-verification" content="7yEus_ffjup2M0H-_wPY69kW8R_EwRt6ALh8V5ycKYE" />
+		<title>慧思天空导航页</title>
+		<script src="js/jq2.1.1.js"></script>
+		<script src="js/vue.js"></script>
+		<script src="js/date.js"></script>
+		<script src="include/layui/layui.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-5C36CLGXTT"></script>
+		<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-5C36CLGXTT'); </script>
+		<link rel="stylesheet" href="include/layui/css/layui.css" />
+		<style>
+/* 公用标签	*/
+body{background-color: #f6f6f6; min-width: 1000px;font-size:1rem !important;}small{font-size: 80%;}div{width: 100%;margin: 0 auto;}li{float: left;}ul{width: 100%;clear: both;float: none;}a:hover{color: #db4c3f;}
+/* 公用属性 */
+.box{border: 1px solid #eee;margin: 10px;padding: 20px;background-color: #fff;border-radius: 10px;}
+.col-F{float: left;}.col-R{float: right;}.col-2{width: 17%;}.col-3{width: 27%;}.col-7{width: 67%;}.col-8{width: 77%;}
+.title{margin: 8px 0;padding: 8px 0;font-size: 0.8rem;}
+/*页面属性*/
+#app{background-color: #fff;position: relative;top: 30px;opacity: 0.95;border-radius: 10px;}
+ul li a{margin: 10px;}
+div.sideMenu h3{width: 100%;float: left;cursor: s-resize;margin: 20px 0;border-bottom: 1px solid #EEEEEE;margin-bottom: 10px;}
+div.sideMenu ul li{border-right: 1px solid #eee;padding: 5px;height: 25px;}
+.iconFont{border: 1px solid #eee;border-radius: 5px;font-style: normal;padding:3px;font-size: 0.75rem;color: #fff;width: 15px;height: 15px;display: inline-block;text-align: center;font-weight: 600;}
+ul#tip{margin-top: 8px;}
+ul#tip li{list-style: decimal;margin-left: 15px;font-size: 13px;color: #b79191;}
+ul li i img{max-width: 16px;}
+.hotword{overflow:hidden; height:16px;}
+.listGroup{width: 100px;margin:5px;padding: 3px;border-radius: 5px;border: 1px solid #fff;line-height: 2.5em;height: 35px;text-align: center;box-shadow: 2px 3px #eee;background-color: #f8f8f8;}
+li.listGroup:hover {box-shadow: 2px 2px #d8d8d8;background-color: #fff;}
+div.dibu small sub{font-size: 0.5rem;}
+/*重写layui样式*/
+.layui-icon{color: #fff;font-size: 20px;padding: 5px;border-radius: 50%;}
+.layui-layer-title{padding:0 !important;text-indent: 10px;}
+.layui-layer-btn{padding: 0 0 10px 0 !important;}
+.layui-btn-primary{padding:3px;margin: 3px;line-height: 2.0em;}
+.layui-layer-page .layui-layer-content{overflow: hidden !important;}
+#LAY_layuipro hr{width:92% !important;}
+.layui-elem-field legend{font-size:0.6rem;}				
+
+.task-count{display:flex;margin:10px 0}.task-count li{padding:5px;margin: 5px;}.active{box-shadow: 2px 2px #d8d8d8;background-color: #f5f5f5;padding: 10px;border-radius: 5px;border: 1px solid #fff;}.tasks{background-color:#fff}.no-task-tip{padding:10px 0 10px 10px;display:block;border-bottom:1px solid #ededed;color:#777}ul.todo-list {overflow-y: scroll;height: 300px;}.todo-list li{position:relative;margin: 2px;border-bottom:1px solid #ededed;padding: 7px;}.todo-list li:hover{background-color:#fafafa}.toggle:after{content:url('data:image/svg+xml;utf8,<svgxmlns="http://www.w3.org/2000/svg"width="40"height="40"viewBox="-10-18100135"><circlecx="50"cy="50"r="40"fill="none"stroke="#ededed"stroke-width="3"/></svg>')}.toggle:checked:after{content:url('data:image/svg+xml;utf8,<svgxmlns="http://www.w3.org/2000/svg"width="40"height="40"viewBox="-10-18100135"><circlecx="50"cy="50"r="40"fill="none"stroke="#bddad5"stroke-width="3"/><pathfill="#5dc2af"d="M7225L42712756l-44202034-52z"/></svg>')}.todo-list li label{white-space:pre-line;word-break:break-all;padding:15px;transition:color .4s}.todo-list li.completed label{color:#0075ff;font-weight: 600;}.todo-list li .destroy{display:none;position:absolute;top:0;right:10px;font-size:20px;color:#f9c0c0;transition:color .2s ease-out}.todo-list li .destroy:hover{color:#f00}.todo-list li .destroy:after{content:'×'}.todo-list li:hover .destroy{display:block}
+
+/*重置谷歌滚动条，其他的浏览器不管辣*/
+  ul.todo-list::-webkit-scrollbar {  width : 10px; height: 1px; } ul.todo-list::-webkit-scrollbar-thumb { border-radius   : 10px; background-color: skyblue; background-image: -webkit-linear-gradient( 45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent ); } ul.todo-list::-webkit-scrollbar-track { box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2); background   : #ededed; border-radius: 10px; }
+
+/*vue样式*/
+.hidden{display: none;}
+</style>
+	</head>
+	<body>
+<div id="app" class="layui-container">	
+		<div class="layui-row title"><p>&nbsp;</p>
+		<div class="layui-col-md5" style="text-align: center;"><a id="date" href="javascript:;"></a><small style="color: #b79191">点击时间查看完整日历</small></div>	
+		<div class="layui-col-md7 hotword"><strong>百度热词：</strong><ul class="list" style="margin-left:50px;"><li v-for="value in hotword.baidu"><a :href="'https://www.baidu.com/s?word='+value.title" :target="t"><small>{{value.title}}</small></a></li></ul></div>
+		</div>
+
+		<div class="layui-row">
+			<div class="box layui-col-md6">
+			<div class="sideMenu layui-row">
+				<div v-for="(value, index) in lists.mainContent">
+			    <h3 v-on:click="onsomething(index)"><i :class="value.icon"></i>&nbsp;&nbsp; {{value.title}}</h3>
+<ul :class="count==index ? 'layui-anim layui-anim-scaleSpring':'hidden'"><li  v-for="item in value.content"><i class="iconFont" v-bind:style="{ backgroundColor:randomColor()}">{{item.name.charAt(0)}}</i><a :href="'//'+item.href" :target="t" :title="item.name">{{item.name}}</a></li></ul>
+				</div>
+			</div>
+			<div class="meitu layui-row"><iframe src="1.html" scrolling="no" height="450" width="500" frameborder="0" allowtransparency="true"></iframe></div>
+<div class="dibu" style="margin-top: 30px;float:left;">			
+<fieldset class="layui-elem-field layui-col-md9"><legend>基于vue、layui、JQ制作<sup style="color: #a7a7a7;">如何设置主页?|</sup><sup style="color: #a7a7a7;">|需要问题反馈?</sup></legend></fieldset>
+<fieldset class="layui-elem-field layui-col-md9"> <legend>BY 清文<small><sub>百度热词更新时间：{{lists.time}}</sub>&nbsp;&nbsp;<sub v-if="lists.beianhao"><a :href="lists.beianhao[1]">{{lists.beianhao[0]}}</a></sub></small></legend> </fieldset>
+<fieldset class="layui-elem-field layui-col-md9"><legend>（慧思）寓意：希望自己能够独立思考，而非人云亦云<sub>2014-<span id="year"></span></sub></legend></fieldset>
+</div>
+			</div>
+
+			<div class="box layui-col-md5" v-if="width>1000">
+<div><iframe scrolling="no" height="56" frameborder="0" allowtransparency="true" src="https://i.tianqi.com?c=code&id=12&icon=1&num=5&site=12"></iframe></div>			
+<div class="page-top">	
+        <span class="layui-btn">自定义网址</span>&nbsp;&nbsp;
+		<span class="layui-btn layui-btn-normal" v-on:click="show = !show" >实用网址</span>&nbsp;&nbsp;
+		<span class="help layui-btn layui-btn-primary">需要帮助？</span>
+<div class="main" v-show="show">
+<h3 class="title"><strong>输入需要添加的网址：</strong></h3>
+<div class="layui-form">
+<input placeholder="标题:慧思天空" class="layui-input" type="text" v-model="todo" />
+ <br />   
+<div class="layui-form-item">
+<div class="layui-input-inline"><input placeholder="网址名：haodidea" class="layui-input" type="text"  v-model="todo1" /></div>	
+<div class="layui-input-inline">
+		<select  lay-search="" lay-filter="wangzhi" >
+<option value="">直接选择或搜索选择</option>
+<option v-for="(item,index) in lists.wangzhi" :key="index" :value="item"  :selected="item.value">{{item}}</option>
+        </select>
+</div>		
+	</div>	
+</div>
+	<ul id="tip">
+		<li>两个框的内容需正确添加后才能访问</li>
+		<li>鼠标点击网站列表中的小框会自动添加到常用网址里面</li>
+		<li>鼠标点击网站列表中的红叉可以删除网址</li>
+		<li style="color: #f00;text-decoration: underline;font-weight: 600;">重要提示：请不要清理电脑的cookie，否则收藏的网址将会被清除</li>
+	</ul>
+	<h4 style="float: left;margin: 5px;padding: 5px;">{{favoriteWeb}}个常用网址(<small>点击列表的小框收藏到常用网址</small>)</h4>
+    <ul class="task-count">
+        <li class="action">
+            <a :class="{active:visibility!=='unCompleted'&&visibility!=='completed'}" href="#all">所有网址</a>
+            <a :class="{active:visibility==='unCompleted'}" href="#unCompleted">未添加网址</a>
+            <a :class="{active:visibility==='completed'}" href="#completed">常用网址</a>
+        </li>
+    </ul>
+    <h3 class="title"><strong>网站列表：</strong></h3>
+    <div class="tasks">
+        <span class="no-task-tip" v-show="!list.length">这里还没有添加任何网址</span>
+        <ul class="todo-list" v-show="list.length">
+            <li class="todo" v-for="item in filterData" v-bind:class="{completed:item.isComplete}" >
+                    <input class="toggle" type="checkbox" v-model="item.isComplete" />
+                    <a :href="item.href" :target="t"><label>{{item.title}}</label></a>
+                    <button class="destroy" @click="delFn(item)" ></button>               
+            </li>
+        </ul>
+    </div>
+</div>
+<div style="margin-top: 30px;" v-show="!show">			
+<ul v-if="lists.rightBox"><li class="listGroup"  v-for="value in lists.rightBox.content"><a :href="'//'+value.href" :target="t">{{value.name}}</a></li></ul>
+		</div>			
+</div>			
+			</div>
+		</div>	
+</div>
+<script>var date=new Date; document.getElementById('year').innerHTML=date.getFullYear(); </script>
+<script>			
+var store = {
+save(key,value){window.localStorage.setItem(key,JSON.stringify(value))},
+fetch(key){return JSON.parse(window.localStorage.getItem(key))||[]}
+}
+var list = store.fetch("storeData");		
+var vm=new Vue({
+el:'#app',
+data:{t:'_blank',lists:[],list,todo:'',todo1:'',todo2:'',hotword:[],meitu:[],artclie:[],count: -1,currentVal:'.com',width:2000,show:true,visibility:"all"},
+created:function(){
+var self = this;
+$.getJSON("json/dhy.json",function(a){self.lists = a;});
+$.getJSON("json/news/20201123.json",function(b){self.hotword = b;});
+$.getJSON("json/meitu/img20201124.json",function(c){self.meitu = c;});
+var w = document.documentElement.clientWidth || document.body.clientWidth;
+this.width==w? "":this.width=w;//监视屏幕宽度，使屏幕宽度等于获取的宽度
+},
+updated:function () {
+this.$nextTick(function () {initForm()});//当vue渲染结束再渲染layui
+  },
+watch:{
+list:{handler:function(){store.save("storeData",this.list)},deep:true},
+width:function(a,b){console.log('new: %s, old: %s', a, b)},//载入时监控浏览器宽度	
+},
+mounted() {},
+methods:{
+randomColor:function(){var r=Math.floor(Math.random()*255),g=Math.floor(Math.random()*255),b=Math.floor(Math.random()*255);return "rgb("+r+","+g+","+b+")"},
+onsomething:function(index){this.count = index;},
+delFn(item){var index = this.list.indexOf(item);this.list.splice(index,1)}
+},
+computed:{
+favoriteWeb(){return  this.list.filter(item=>{return item.isComplete}).length},
+filterData(){
+	//过滤的时候有三种情况 all completed unCompleted
+	var filter = {
+		all:function(list){return list},
+		completed:function(list){return list.filter(item=>{return item.isComplete})},
+		unCompleted:function(list){return list.filter(item=>{return !item.isComplete})}
+	}
+	//如果找到了过滤函数，就返回过滤后的数据，如果没有找到就返回所有的数据
+	return filter[this.visibility]?filter[this.visibility](list):list;
+}
+}
+		});
+function initForm(){
+	 layui.use(['layer','element','form','carousel'], function() {
+				var layer = layui.layer,element = layui.element,
+					form = layui.form,carousel = layui.carousel;
+					form.render('select');
+					form.on('select',function (data) {			     								
+						  if(vm.todo==""){layer.alert('网站的标题忘记了╮〔╯o╰〕╭')}	
+						  else if(vm.todo1==""){layer.alert('网址又忘记了╮〔╯o╰〕╭')}
+						  else{vm.list.push({title:vm.todo,href:'//'+vm.todo1+data.value,isComplete:false});}
+						 });
+					carousel.render({elem: '#test1',width: '100%',height:'180px',arrow: 'always',autoplay: true,arrow:'hover',indicator:'none',interval:4000});
+					$('i.layui-icon').css('backgroundColor',"rgb(59, 139, 195)");	 
+					})}
+
+$('#date').click(function(){layer.open({title:false,type:2,shadeClose:true,shade:true,maxmin:true,area:['750px','400px'],scrollbar: false,content:'http://www.5igb.com/wnl.htm'})})
+
+$(".help").click(function (){layer.open({type: 1,title: false,closeBtn: false,area: '500px;',shade: 0.8,scrollbar: false,id: 'LAY_layuipro' ,btn: ['朕已阅', '懒得看'],btnAlign: 'c',moveType: 1,content: '<div style="padding: 20px; line-height: 22px; background-color: #393D49; color: #fff; font-weight: 300;"><br>Q:添加的网址，会被后台记录或者被窃取吗？<br>A：不会！内容仅保存在本台电脑里，除非电脑被人顺走了^-^<br><hr>Q:添加网址后，点击出现错误或空白？<br>A：请检查网址是否按照要求填写，外网网址需科学上网<br><hr>Q：什么是科学上网？<br>A：这个自己百度一下<br></div>'})})
+
+$('sup:first').click(function(){
+layer.open({type:2,title:'<h2 style="height:60px; text-align: center;color:#f00">选择合适的浏览器进行设置</h2>',shadeClose:true,shade:true,maxmin:true,area:['1000px','600px'],content:'/html/zhuyeshezhi.html'})})
+ 
+$('sup:last').click(function(){
+ layer.confirm('请发送邮件至970605873.com',{btn:['朕马上给你发','下次再说']},function(){layer.open({type:2,title:'<h2 style="height:60px; text-align: center;color:#f00">已经帮您打开QQ邮箱的页面</h2>',shadeClose:true,shade:true,maxmin:true,area:['1000px','600px'],content:'https://mail.qq.com/cgi-bin/loginpage'});},function(){layer.open({type:1,skin:'layui-layer-lan',closeBtn:0,anim:2,shadeClose:true,time:2000,content:'如果你有意见或建议，随时欢迎你进行反馈！'})})})									 
+
+
+function hashFn(){var hash = window.location.hash.slice(1);vm.visibility = hash;}
+hashFn();window.addEventListener('hashchange',hashFn);
+</script>
+
+<script type="text/javascript">
+ function autoScroll(obj) {
+     $(obj).find(".list").animate({marginTop: "-14px"}, 3000, function () {
+         $(this).css({marginTop: "-14px"}).find("li:first").appendTo(this);
+     })}
+ var timer = setInterval('autoScroll(".hotword")', 3000);
+ $(function () {
+     $(".hotword").hover(function () {clearInterval(timer)}
+	 , function () {timer = setInterval('autoScroll(".hotword")', 3000)})
+ })
+ /*
+ 写在前面的话，感谢一些大佬的思路，在制作上有大量参考和引用，另外，别问为什么IE打不开，就是很多新方法不支持，没别的。
+ -----
+ `由于每个网站的ico图标并不统一，为了节省设备资源，减轻服务器负担，因此将其删除
+ `修正添加网址需要添加双斜杠的问题
+ -----
+ 2020.08.01:已知的新问题，由于基于本地存储，所以清除cookie会导致收藏的网址被清除
+ -----
+ 2020.08.19：新增功能：取网址的第一个字，并添加随机背景颜色。已知问题，触发点击时，网址背景色也会随机切换
+ ----
+ 2020.08.21：修正控制台报错：Cannot read property 'content' of undefined"和TypeError: Cannot read property '1' of undefined
+ ----
+ 2020.08.22：添加网址后缀功能，现在可以直接选择网址后缀了！
+ ----
+2020.09.12：国内的网站好烦人，明明没有任何违规，做个自己用的导航页还不可以，我才不改，关了就算了。
+-----
+2020.10.30: 最近发现了360导航的美图接口，接下来可能会不定时更新一下美图。
+----
+2020.11.24：添加360明星图片时发现，不管是直接调用还是采用框架形式调用，都需要图片主动访问一次才能正常调用，这可能是网站采取了防盗链技术,暂时未能解决。
+ */
+</script>
+	</body>
+</html>
