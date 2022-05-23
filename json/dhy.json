@@ -1,0 +1,131 @@
+{
+	"time":"2020.11.23",
+	"beianhao":["粤ICP备15108684号","//beian.miit.gov.cn"],
+	"mainContent":
+		{"search":{"title":"搜索网站","icon":"layui-icon layui-icon-search","content":[
+			{"name":"百度","href":"baidu.com"},
+			{"name":"谷歌","href":"google.com"},
+			{"name":"必应","href":"bing.com"},
+			{"name":"360搜","href":"so.com"},
+			{"name":"搜狗","href":"sogou.com"},
+			{"name":"中国搜索","href":"chinaso.com"},
+			{"name":"联合搜索","href":"gobaidugle.com"},
+			{"name":"Yandex","href":"yandex.com"},
+			{"name":"Lycos","href":"lycos.com"},
+			{"name":"duckduckgo","href":"duckduckgo.com"}
+			]},
+		"Znew":{"title":"国内新闻网站","icon":"layui-icon layui-icon-list","content":[
+			{"name":"网易","href":"163.com"},
+			{"name":"新浪","href":"sina.com"},
+			{"name":"搜狐","href":"sohu.cn"},
+			{"name":"凤凰","href":"ifeng.com"},
+			{"name":"腾讯","href":"news.qq.com"},
+			{"name":"人民","href":"people.cn"},
+			{"name":"澎拜","href":"thepaper.cn"},
+			{"name":"参考消息","href":"cankaoxiaoxi.com"},
+			{"name":"新华","href":"xinhuanet.com"},
+			{"name":"今日头条","href":"toutiao.com"}
+		]},
+		"Enew":{"title":"国外新闻网站（大部分需科学上网，排名不分先后）","icon":"layui-icon layui-icon-list","content":[
+			{"name":"美国有线电视新闻","href":"cnn.com"},
+			{"name":"纽约时报","href":"nytimes.com"},
+			{"name":"英国广播公司新闻","href":"bbc.co.uk/news"},
+			{"name":"英国路透社","href":"uk.reuters.com"},
+			{"name":"越南人民","href":"nhandan.com.vn"},
+			{"name":"香港明报新闻","href":"news.mingpao.com"},
+			{"name":"香港经济日报","href":"hket.com"},
+			{"name":"香港苹果日报","href":"appledaily.com"},
+			{"name":"台湾好报","href":"newstaiwan.com.tw"},
+			{"name":"TVBS新闻","href":"tvbs.com.tw"},
+			{"name":"三立新闻","href":"setn.com"},
+			{"name":"东森新闻","href":"news.ebc.net.tw"},
+			{"name":"朝日新闻","href":"asahi.com"},
+			{"name":"读卖新闻","href":"yomiuri.co.jp"},
+			{"name":"NAVER","href":"news.naver.com"},
+			{"name":"韩国中央日报","href":"joongang.joins.com"},
+			{"name":"俄罗斯新闻社","href":"ria.ru"},
+			{"name":"Rambler","href":"rambler.ru"},
+			{"name":"俄罗斯消息报","href":"iz.ru"}
+		]},
+		"video":{"title":"国内视频","icon":"layui-icon layui-icon-video","content":[
+			{"name":"A站","href":"acfun.cn"},
+			{"name":"B站","href":"bilibili.com"},
+			{"name":"优酷网","href":"youku.com"},
+			{"name":"好看视频","href":"haokan.baidu.com"},
+			{"name":"腾讯视频","href":"v.qq.com"},
+			{"name":"爱奇艺","href":"iqiyi.com"},
+			{"name":"芒果TV","href":"mgtv.com"},
+			{"name":"搜狐视频","href":"tv.sohu.com"},
+			{"name":"PP视频","href":"pptv.com"}
+	]},
+	"videoFree":{"title":"国内视频（免费版）","icon":"layui-icon layui-icon-video","content":[
+		{"name":"胡哥直播","href":"hugelive.com"},
+		{"name":"蓝光电影","href":"blu-raydisc.tv"},
+		{"name":"BD影视","href":"bd-film.cc"},
+		{"name":"奇艺123","href":"qiyi123.com"},
+		{"name":"皮特影院","href":"pites.cc"},
+		{"name":"草民电影","href":"cmdy2020.com"},
+		{"name":"熊猫影视","href":"hxncpgs.com"}
+	]},
+	"videoForeign":{"title":"国外视频（大部分需科学上网，排名不分先后）","icon":"layui-icon layui-icon-video","content":[
+		{"name":"油管","href":"youtube.com"},
+		{"name":"Mail.Ru","href":"my.mail.ru/video"},
+		{"name":"E!在线","href":"eonline.com/ap/videos"},
+		{"name":"oneindia","href":"oneindia.com/videos"},
+		{"name":"Uncrate","href":"uncrate.com/tv"},
+		{"name":"dailymotion","href":"dailymotion.com/ph"},
+		{"name":"liveleak","href":"liveleak.com"},
+		{"name":"niconico","href":"nicovideo.jp"}
+	]},
+	"shopping":{"title":"购物网站","icon":"layui-icon layui-icon-cart-simple","content":[
+		{"name":"天猫","href":"www.tmall.com"},
+		{"name":"京东","href":"jd.com"},
+		{"name":"亚马逊","href":"www.amazon.cn"},
+		{"name":"淘宝","href":"taobao.com"},
+		{"name":"唯品会","href":"vip.com"},
+		{"name":"苏宁","href":"suning.com"},
+		{"name":"当当","href":"dangdang.com"},
+		{"name":"1号店","href":"yhd.com"},
+		{"name":"ebay","href":"ebay.com"}
+	]},
+	"image":{"title":"美图网站（部分需科学上网，排名不分先后）","icon":"layui-icon layui-icon-picture","content":[
+		{"name":"花瓣","href":"huaban.com"},
+		{"name":"堆糖","href":"duitang.com"},
+		{"name":"pixiv","href":"pixiv.net"},
+		{"name":"pinterest","href":"pinterest.com"},
+		{"name":"instagram","href":"instagram.com"},
+		{"name":"tineye","href":"tineye.com"},
+		{"name":"funnyjunk","href":"funnyjunk.com"},
+		{"name":"behance","href":"behance.net"},
+		{"name":"原画搜索","href":"gensun.org"},
+		{"name":"数字驿站","href":"k1982.com"},
+		{"name":"pixabay","href":"pixabay.com"}
+	]},
+	"fun":{"title":"有趣的网站（部分需科学上网，排名不分先后）","icon":"layui-icon layui-icon-website","content":[
+	{"name":"谷歌地球【发现世界的美好】","href":"earth.google.com"},
+	{"name":"黑客装逼网站【装逼专用，谁用谁知道】","href":"geektyper.com"},
+	{"name":"童年游戏【在线玩红白机、FC游戏 找回童年的快乐】","href":"yikm.net"},
+	{"name":"在线摔猫【鬼畜摔猫游戏，超解压】","href":"cat-bounce.com"},
+	{"name":"在线PS【简单图片，简单处理】","href":"uupoop.com"},
+	{"name":"导图在线【头脑风暴，线上完成】","href":"gitmind.cn"},
+	{"name":"win93【很多好玩的，快来快乐一下】","href":"www.windows93.net"},
+	{"name":"线上云图【你也是个棒棒的天气预测家！】","href":"www.windy.com"},
+	{"name":"线上星系图【尝试一下，在家看星星】","href":"stellarium-web.org"},
+	{"name":"魔幻页面【30个奇趣动物，让你惊叹不已】","href":"species-in-pieces.com"}
+    ]}
+  },
+	"rightBox":{"content":[
+		{"name":"在线翻译","href":"translate.google.cn"},
+		{"name":"快递查询","href":"kuaidi100.com"},
+		{"name":"查询网","href":"ip138.com"},
+		{"name":"出行查询","href":"8684.cn"},
+		{"name":"开发工具","href":"www.box3.cn"},
+		{"name":"号码查询","href":"114chn.com/tel.htm"},
+		{"name":"美食中国","href":"meishichina.com"},
+		{"name":"7K7K","href":"7k7k.com"},
+		{"name":"4399","href":"4399.com"}
+	]},
+	"wangzhi":[	".com" ,".cn" ,".com.cn" ,".net" ,".top" ,".site" ,".xyz" ,".shop" ,".ltd" ,".club" ,".online" ,".vip" ,".org.cn" ,".gov.cn" ,".fun" ,".table" ,".org" ,".store" ,".wang" ,".ac.cn" ,".tech" ,".group" ,".co" ,".info" ,".pro" ,".team" ,".city" ,".world" ,".name" ,".ren" ,".plus" ,".wiki" ,".link" ,".art" ,".中国" ,".商标" ,".网址" ,".手机" ,".购物" ,".公司" ,".网络" ,".我爱你" ,".企业" ,".中文网" ,".集团" ,".在线" ,".移动" ,".网店" ,".广东" ,".佛山" ,".招聘" ,".餐厅"]
+
+}
+	

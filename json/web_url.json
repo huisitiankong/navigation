@@ -1,0 +1,156 @@
+	{
+    "jsonNav": [
+      {
+        "name": "首页",
+        "url": "http://www.haodidea.com"
+      },
+      {
+        "name": "学习笔记",
+        "url": "https://huisiblog.wordpress.com/"
+      },
+      {
+        "name": "地图导航",
+        "url": "http://www.haodidea.com/wz/sitemap.html"
+      },
+      {
+        "name": "实用网址",
+        "url": "http://www.haodidea.com/huisi_web.html"
+      }
+    ],
+    "jsonWeb": [
+      {
+        "name": "网易",
+        "url": "http://www.163.com"
+      },
+      {
+        "name": "odditycentral",
+        "url": "http://www.odditycentral.com"
+      },
+      {
+        "name": "top-celebrities",
+        "url": "http://www.top-celebrities.com"
+      },
+      {
+        "name": "intertainments",
+        "url": "http://www.intertainments.com"
+      },
+      {
+        "name": "mirror",
+        "url": "http://www.mirror.co.uk"
+      },
+      {
+        "name": "纽约每日新闻",
+        "url": "http://www.nydailynews.com"
+      },
+      {
+        "name": "台湾时报",
+        "url": "http://www.twtimes.com.tw"
+      },
+      {
+        "name": "台湾好报",
+        "url": "http://www.newstaiwan.com.tw"
+      },
+      {
+        "name": "今日亚洲",
+        "url": "http://www.asiatoday.com"
+      }
+    ],
+    "jsonWeb1": [
+      {
+        "name": "花瓣",
+        "url": "http://www.huaban.com"
+      },
+      {
+        "name": "堆糖",
+        "url": "http://www.duitang.com"
+      },
+      {
+        "name": "pixiv",
+        "url": "http://www.pixiv.net"
+      },
+      {
+        "name": "pinterest",
+        "url": "http://www.pinterest.com"
+      },
+      {
+        "name": "tineye",
+        "url": "http://www.tineye.com"
+      },
+      {
+        "name": "funnyjunk",
+        "url": "http://www.funnyjunk.com"
+      },
+      {
+        "name": "behance",
+        "url": "http://www.behance.net"
+      },
+      {
+        "name": "原画搜索",
+        "url": "http://www.gensun.org"
+      },
+      {
+        "name": "数字驿站",
+        "url": "http://www.k1982.com"
+      }
+    ],
+  "listWeb1": [
+      {
+        "name": "网站首页",
+        "url": "http://www.haodidea.com"
+      },
+      {
+        "name": "互联网知识",
+        "url": "http://www.haodidea.com/wz/a/hulianwangzhishi"
+      },
+      {
+        "name": "医学阅读",
+        "url": "http://www.haodidea.com/wz/a/yixueyuedu/"
+      },
+      {
+        "name": "电脑知识",
+        "url": "http://www.haodidea.com/wz/a/diannaozhishi"
+      },
+      {
+        "name": "墙外世界",
+        "url": "http://www.haodidea.com/wz/a/qiangwaishijie"
+      },
+      {
+        "name": "新闻热点",
+        "url": "http://www.haodidea.com/wz/a/xinwenredian"
+      },
+      {
+        "name": "幽默文摘",
+        "url": "http://www.haodidea.com/wz/a/youmowenzhai"
+      },
+      {
+        "name": "热点图片",
+        "url": "http://www.haodidea.com/wz/a/xinwenredian/rediantupian"
+      },
+    {
+        "name": "安卓软件下载",
+        "url": "http://www.haodidea.com/wz/a/anzhuoruanjian"
+      },
+    {
+        "name": "问答",
+        "url": "http://www.haodidea.com/wz/ask"
+      }
+    ],
+"jsonFootNav": [
+      {
+        "name": "免责声明",
+        "url": "http://www.haodidea.com/tksm.html"
+      },
+      {
+        "name": "粤ICP备15108684号-1",
+        "url": "http://www.miitbeian.gov.cn"
+      },
+     {
+        "name": "官方QQ群",
+        "url": "http://jq.qq.com/?_wv=1027&amp;k=X9nqq8"
+      } ,
+     {
+        "name": "版权所有--慧思天空网",
+        "url": "http://www.haodidea.com"
+      }
+    ]
+}
